@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-
+import "./styles.css";
 
 const TableHeader = () => {
   // boilerplate table header functional component
@@ -21,11 +21,11 @@ const TableBody = (props) => {
     return (
       
       <tr key={index}>
-        <td>{row.name}</td>
-        <td>
+        <td className="tableElement">{row.name}</td>
+        <td className="tableElement">
           <a href={row.url}>{row.url}</a>
         </td>
-        <td>
+        <td className="tableElement">
           <button onClick={() => props.removeLink(index)}>Delete</button>
         </td>
       </tr>
@@ -40,7 +40,7 @@ const Table = (props) => {
   {
     return (
           <div>  
-            <table style={{width: '80vw'}}>
+            <table className="table">
               <TableHeader/>
               <TableBody linkData={props.linkData} removeLink={props.removeLink}/>
             </table>
