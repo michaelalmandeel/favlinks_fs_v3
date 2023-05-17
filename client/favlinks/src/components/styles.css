@@ -1,8 +1,10 @@
 .table{
   width: 100%;
   background-color: blue;
+  padding: 15px;
 }
 
 .tableElement{
   background-color: grey;
+  margin: 15px;
 }
