@@ -19,7 +19,7 @@ const Form = (props) => {
   }
 
   return (
-   
+    <div className="container">
     <form onSubmit={submitForm} >
       <div style={{borderBottom: '1px solid darkgrey',width: '80vw',padding: '10px'}}>
       <label for="name1">Name:</label><br></br>
@@ -31,7 +31,7 @@ const Form = (props) => {
       </div>
       <input type="submit" value="Submit" style={{margin: '10px'}}></input>
     </form>
-
+     </div>
   )
 }
 
