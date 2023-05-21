@@ -39,7 +39,7 @@ const TableBody = (props) => {
 const Table = (props) => {
   {
     return (
-          <div>  
+          <div className="container">  
             <table className="table">
               <TableHeader/>
               <TableBody linkData={props.linkData} removeLink={props.removeLink}/>
